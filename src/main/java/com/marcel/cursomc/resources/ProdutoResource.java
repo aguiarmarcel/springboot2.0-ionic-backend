@@ -34,7 +34,7 @@ public class ProdutoResource {
 			@RequestParam(value="nome", defaultValue="") String nome, 
 			@RequestParam(value="categorias", defaultValue="") String categorias, 
 			@RequestParam(value="page", defaultValue="0") Integer page, 
-			@RequestParam(value="linesPerPage", defaultValue="24") Integer linesPerPage, 
+			@RequestParam(value="linesPerPage", defaultValue="10") Integer linesPerPage, 
 			@RequestParam(value="orderBy", defaultValue="nome") String orderBy, 
 			@RequestParam(value="direction", defaultValue="ASC") String direction) {
 		String nomeDecoded = URL.decodeParam(nome);
